@@ -1,0 +1,193 @@
+
+.janela
+{
+  
+    position: absolute;
+     
+    background-color: white;
+    outline-color: black;
+    outline-style: solid;
+
+    width: 450px;
+    height: 350px;
+
+     display: flex;
+     flex-direction: column;
+
+}
+
+.janela > div 
+{
+    outline-style: solid;
+    outline-color: red;
+}
+
+.janela-up
+{
+    outline-color:black;
+    height: 65px;
+}
+
+.j-info
+{
+    background-color:coral;
+    border-bottom-style: solid;
+    
+    height: 20px;
+    display: flex;
+    
+}
+
+.j-botoes
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.j-tool
+{
+    background-color: cadetblue;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    border-bottom-style: solid;
+}
+
+.t-buttons
+{
+    font-size: 11px;
+    padding: 5px;
+}
+
+.j-path
+{
+    background-color:cornflowerblue;
+    height: 20px;
+
+    display: flex;
+     flex-direction: row;
+}
+
+.jp-tools{
+
+width: 100px;}
+
+
+
+
+.janela-down
+{
+    outline-color:black;
+    height: 100%;
+    
+    display: flex;
+    flex-direction:row;
+}
+
+
+
+.jd-left_path{
+    width: 150px;
+    height: 100%;
+    background-color: aquamarine;
+}
+
+.f-items
+{
+   height: 20px;
+   outline-style: solid;
+   border-radius: 3px;
+   
+   font-size: 15px;
+   outline-color: gray;
+}
+
+.f-items:hover
+{
+    background-color: aquamarine;
+}
+
+.jd-content{
+    
+    width: 100%;
+    height: 100%;
+    
+    gap: 8px;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: bisque;
+    padding: 7px;
+}
+
+
+.dropFolders
+{
+    background-color: white;
+    border-radius: 5px;
+    padding-left: 20px;
+    font-size: 12px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+
+    -webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+.dpList-folders
+{
+    margin-left: 20px;
+    display: none;
+    flex-direction: column;
+}
+
+
+.dropFolders::before
+{
+   
+    content:"";
+    border-style: solid;
+    z-index: 1000;
+    height: 3px;
+    width: 3px;
+    position:absolute;
+
+    left: 1px;
+    margin-top: 0.6%;
+
+    border-top-color: white;
+    border-left-color:white;
+
+    transform: translate(2,-90);
+    transform: rotate(-44deg);
+
+
+    
+}
+
+.slotes
+{
+  
+-webkit-user-select: none;
+
+
+}
+
+.dropFolders.active::before
+{
+   
+    transition: 0.2s;
+    left: 3px;
+    transform: rotate(46deg);
+
+}
+
+.active
+{
+    display: flex;
+}

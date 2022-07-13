@@ -1,0 +1,79 @@
+
+body
+{
+    background-color: rgb(200, 194, 189);
+}
+
+#tela
+{
+background-color: rgb(200, 194, 189);
+    position: absolute;
+    width: 700px;
+ height: 500px;
+ outline-style: solid;
+}
+
+#barra
+{
+
+position: relative;
+ background-color: black;
+ outline-style: solid;
+ /* bottom: -94%; */
+ border-radius: 2px;
+ height: 30px;
+
+  justify-self:flex-end;
+}
+
+#grid-apps
+{
+    display: grid;
+   padding-left: 8px;
+   padding-top: 8px;
+   
+     grid-template-columns:repeat(4,0.10fr);
+     grid-template-rows: repeat(8,0.12fr);
+    
+    
+    
+
+    outline-style: solid;
+     outline-color: red;
+     outline-width: 6px;
+     height: 468px;
+}
+
+
+
+
+.icon
+{
+  
+  position: relative;
+  height: 100%;
+
+ 
+  
+}
+
+.icon-grid
+{
+  
+  position: relative;
+  height: 40px;
+
+   outline-style: solid;
+  outline-color: rgb(0, 162, 255);
+  outline-width: 2px;
+  
+}
+.icon:hover,.icon-grid:hover
+{
+    filter: invert(23%)
+    sepia(6%) 
+    saturate(4357%) 
+    hue-rotate(164deg) 
+   brightness(95%) 
+   contrast(97%);
+}

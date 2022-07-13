@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Windows Css</title>
+    <link rel="stylesheet" href="/wbasico.css" />
+    <link rel="stylesheet" href="/folders.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <div id="tela" style="display: flex; flex-direction: column">
+      <div id="grid-apps">
+        <img
+          data-tipo="folder"
+          id="pasta"
+          style="display: none"
+          class="icon-grid"
+          src="/img/icon/w-folder-icon.png"
+        />
+      </div>
+
+      <div data-pasta="oi" class="janela">
+        <div class="janela-up">
+          <div class="j-info">
+            <span id="pastaNm" style="position: absolute; left: 40%"
+              >New folder</span
+            >
+            <div
+              class="j-botoes"
+              style="position: absolute; right: 0; align-self: flex-end"
+            >
+              <button>-</button>
+              <button>o</button>
+              <button id="close_b">x</button>
+            </div>
+          </div>
+          <div class="j-tool">
+            <span class="t-buttons">File</span>
+            <span class="t-buttons">Home</span>
+            <span class="t-buttons">Share</span>
+            <span class="t-buttons">View</span>
+            <span class="t-buttons">Picture tool</span>
+          </div>
+          <div class="j-path">
+            <div
+              class="jp-tools"
+              style="display: grid; grid-template-columns: 1fr 1fr"
+            >
+              <button id="btn-dw"><</button>
+              <button id="btn-up">></button>
+            </div>
+            <input type="text" style="width: 500px" />
+            <input type="search" style="width: 30%" />
+          </div>
+        </div>
+        <div class="janela-down">
+          <div class="jd-left_path">
+            <div class="dropFolders">Quick Acess</div>
+            <div class="dpList-folders">
+              <div>Desktop</div>
+              <div>Documents</div>
+              <div>Download</div>
+            </div>
+
+            <div class="dropFolders">This pc</div>
+            <div class="dpList-folders">
+              <div>Desktop</div>
+              <div>Documents</div>
+              <div>Download</div>
+              <div>Picture</div>
+              <div>Music</div>
+            </div>
+          </div>
+          <div class="jd-content">
+            <div class="f-items">pasta</div>
+            <div class="f-items">pasta</div>
+            <div class="f-items">pasta</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="barra" style="display: flex; flex-direction: row">
+        <div id="baraa-pesquisa" style="display: flex; flex-direction: row">
+          <img class="icon" src="/img/icon/W-icon.png" />
+          <div
+            id="barra-pesquisa"
+            style="
+              background-color: rgb(249, 248, 248);
+              height: 101%;
+              position: relative;
+              width: 150px;
+            "
+          >
+            <i
+              style="transform: translate(30%, 50%)"
+              class="fa fa-search"
+              aria-hidden="true"
+            >
+            </i>
+          </div>
+          <img class="icon" src="/img/icon/w-history-icon.png" />
+        </div>
+        <div
+          id="Wbar_apps"
+          style="width: 50%; display: flex; flex-direction: row"
+        >
+          <img class="icon" src="/img/icon/w-folder-icon.png" />
+          <img class="icon" src="/img/icon/w-folder-icon.png" />
+          <img class="icon" src="/img/icon/w-folder-icon.png" />
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/taskManager.js"></script>
+    <script src="/grid.js"></script>
+    <script type="module" src="/sys_pastas.js"></script>
+    <script defer type="module" src="/diretorios.js"></script>
+
+    <script></script>
+  </body>
+</html>
